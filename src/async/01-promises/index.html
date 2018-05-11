@@ -5,8 +5,20 @@
     <title>Globals</title>
 </head>
 <body>
+
+    <div id="placeholder">
+        Dynamic data goes here!
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+    <script src="js/app-jobs.js"></script>
     <script>
-      document.write('<script src="js/script.js"><\/script>');
+      Company.app.start().then(function(data) {
+        Company.app.render({
+          el: '#placeholder',
+          data: data
+        });
+      });
     </script>
 </body>
 </html>
