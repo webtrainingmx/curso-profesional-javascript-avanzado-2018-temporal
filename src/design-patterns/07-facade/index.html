@@ -5,8 +5,23 @@
     <title>Globals</title>
 </head>
 <body>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
     <script>
       document.write('<script src="js/script.js"><\/script>');
+    </script>
+    <script>
+      (function() {
+
+        var url = './data/jobs.json';
+
+        App.utils.http.get(url).then(function(data) {
+          console.log(data);
+        });
+
+      })();
     </script>
 </body>
 </html>

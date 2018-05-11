@@ -1,0 +1,29 @@
+{
+  "name": "curso-javascript-patrones-de-diseno",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:dev": "webpack --config webpack.config.js --mode=development",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webtrainingmx/curso-profesional-javascript-avanzado-2018-temporal.git"
+  },
+  "keywords": [],
+  "author": "Alex Arriaga",
+  "license": "UNLICENSED",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/webtrainingmx/curso-profesional-javascript-avanzado-2018-temporal/issues"
+  },
+  "homepage": "https://github.com/webtrainingmx/curso-profesional-javascript-avanzado-2018-temporal#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^4.8.1",
+    "webpack-cli": "^2.1.3"
+  }
+}

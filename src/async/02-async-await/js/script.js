@@ -34,6 +34,7 @@
   }
 
   async function runEverything() {
+
     var responseOne = await step1();
     var responseTwo = await step2(responseOne);
     var responseThree = await step3(responseTwo);
